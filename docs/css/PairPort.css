@@ -38,34 +38,34 @@ body {
   vertical-align: middle;
 }
 
-#memory--app-container {
+#pairport--app-container {
   background-color: #0061a8;
   width:100%;
   height:90%;
 }
 
-.memory--menu-bar {
+.pairport--menu-bar {
   width:100%;
   background-color: #222;
   height:10%;
   display:table;
 }
 
-.memory--menu-bar .inner {
+.pairport--menu-bar .inner {
   display:table-cell;
   vertical-align:middle;
 }
-.memory--menu-bar .left {
+.pairport--menu-bar .left {
   text-align: left;
   float:left;
   width:50%;
 }
-.memory--menu-bar .right {
+.pairport--menu-bar .right {
   text-align: right;
   float:right;
   width:50%;
 }
-.memory--app-name {
+.pairport--app-name {
   color:#ccc;
   font-size:26px;
   margin:0;
@@ -75,35 +75,35 @@ body {
   letter-spacing: 2px;
 }
 @media screen and (max-width: 480px) {
-  .memory--app-name {
+  .pairport--app-name {
     font-size:16px;
   }
 }
 
-#memory--settings-icon {
+#pairport--settings-icon {
   height: 24px;
   display: block;
   padding:4px 8px;
   float: right;
 }
 
-#memory--end-game-modal .wrapper {
+#pairport--end-game-modal .wrapper {
   background-color: rgba(0, 0, 0, .86);
   text-align: center;
   color:#ccc;
   padding:8px 0;
 }
-#memory--end-game-modal h2,
-#memory--end-game-modal h3 {
+#pairport--end-game-modal h2,
+#pairport--end-game-modal h3 {
   margin:0;
   margin-bottom: 4px;
 }
 
-#memory--settings-modal {
+#pairport--settings-modal {
   background-color: rgba(0, 0, 0, .86);
   z-index: 4;
 }
-#memory--settings-modal form {
+#pairport--settings-modal form {
   min-width:240px;
   width:50%;
   margin:0 auto;
@@ -111,12 +111,12 @@ body {
   color:#ccc;
 }
 
-.memory--settings-label {
+.pairport--settings-label {
   margin:8px 0;
 }
 
-#memory--settings-grid,
-#memory--settings-reset {
+#pairport--settings-grid,
+#pairport--settings-reset {
   width:100%;
   margin-bottom:16px;
   font-size:18px;
@@ -126,18 +126,18 @@ body {
   text-align: center;
 }
 
-#memory--settings-grid option {
+#pairport--settings-grid option {
   padding-top:5px;
   padding-bottom:5px;
 }
 
-#memory--settings-reset {
+#pairport--settings-reset {
   border-radius:5px;
   border:2px solid #ccc;
   cursor: pointer;
 }
 
-#memory--cards {
+#pairport--cards {
   margin:0 auto;
   padding:0;
   height:100%;
