@@ -1,8 +1,8 @@
-# PairPort
+# PairPort 🧩
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 
-PairPort is a memory game built with HTML5, CSS3 and Javascript.
+PairPort is a memory game aimed for children built with HTML5, CSS3 and Javascript.
 
 You can try out this game [here](https://richardlara67.github.io/PairPort/)
 
