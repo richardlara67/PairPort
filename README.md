@@ -1,21 +1,24 @@
 # PairPort
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 
 PairPort is a memory game built with HTML5, CSS3 and Javascript.
 
 You can try out this game [here](https://richardlara67.github.io/PairPort/)
 
-## Installation :
+## Installation
 
-Clone the project locally :
+### Clone the project
+
+To clone the project locally please refer to the following :
 
 ```bash
 ~$ git clone https://github.com/richardlara67/PairPort.git
 ```
 
-## Start the project
+### Start the project
 
-Go to the folder recently created "PairPort".
+To start the project
 
-Launch `docs/index.html`.
+1. Head to the cloned repository
+2. Launch `docs/index.html`.
