@@ -23,8 +23,8 @@
   /************ End hard coded settings ******************/
 
   // Handle clicking on settings icon
-  var settings = document.getElementById('memory--settings-icon');
-  var modal = document.getElementById('memory--settings-modal');
+  var settings = document.getElementById('pairport--settings-icon');
+  var modal = document.getElementById('pairport--settings-modal');
   var handleOpenSettings = function (event) {
     event.preventDefault();
     modal.classList.toggle('show');
@@ -32,20 +32,20 @@
   settings.addEventListener('click', handleOpenSettings);
 
   // Handle settings form submission
-  var reset = document.getElementById('memory--settings-reset');
+  var reset = document.getElementById('pairport--settings-reset');
   var handleSettingsSubmission = function (event) {
     event.preventDefault();
 
-    var selectWidget = document.getElementById("memory--settings-grid").valueOf();
+    var selectWidget = document.getElementById("pairport--settings-grid").valueOf();
     var grid = selectWidget.options[selectWidget.selectedIndex].value;
     var gridValues = grid.split('x');
     var cards = $.initialize(Number(gridValues[0]), Number(gridValues[1]), imagesAvailable);
 
     if (cards) {
-      document.getElementById('memory--settings-modal').classList.remove('show');
-      document.getElementById('memory--end-game-modal').classList.remove('show');
-      document.getElementById('memory--end-game-message').innerText = "";
-      document.getElementById('memory--end-game-score').innerText = "";
+      document.getElementById('pairport--settings-modal').classList.remove('show');
+      document.getElementById('pairport--end-game-modal').classList.remove('show');
+      document.getElementById('pairport--end-game-message').innerText = "";
+      document.getElementById('pairport--end-game-score').innerText = "";
       buildLayout($.cards, $.settings.rows, $.settings.columns);
     }
 
@@ -66,7 +66,7 @@
 
     if (status.code == 3 ) {
       setTimeout(function () {
-        var childNodes = document.getElementById('memory--cards').childNodes;
+        var childNodes = document.getElementById('pairport--cards').childNodes;
         childNodes[status.args[0]].classList.remove('clicked');
         childNodes[status.args[1]].classList.remove('clicked');
       }.bind(status), nonMatchingCardTime);
@@ -75,11 +75,11 @@
       var score = parseInt((($.attempts - $.mistakes) / $.attempts) * 100, 10);
       var message = getEndGameMessage(score);
 
-      document.getElementById('memory--end-game-message').textContent = message;
-      document.getElementById('memory--end-game-score').textContent =
+      document.getElementById('pairport--end-game-message').textContent = message;
+      document.getElementById('pairport--end-game-score').textContent =
           'Score: ' + score + ' / 100';
 
-      document.getElementById("memory--end-game-modal").classList.toggle('show');
+      document.getElementById("pairport--end-game-modal").classList.toggle('show');
     }
 
   };
@@ -109,25 +109,25 @@
       return;
     }
 
-    var memoryCards = document.getElementById("memory--cards");
+    var pairportCards = document.getElementById("pairport--cards");
     var index = 0;
 
-    var cardMaxWidth = document.getElementById('memory--app-container').offsetWidth / columns;
+    var cardMaxWidth = document.getElementById('pairport--app-container').offsetWidth / columns;
     var cardHeightForMaxWidth = cardMaxWidth * (3 / 4);
 
-    var cardMaxHeight = document.getElementById('memory--app-container').offsetHeight / rows;
+    var cardMaxHeight = document.getElementById('pairport--app-container').offsetHeight / rows;
     var cardWidthForMaxHeight = cardMaxHeight * (4 / 3);
 
     // Clean up. Remove all child nodes and card clicking event listeners.
-    while (memoryCards.firstChild) {
-      memoryCards.firstChild.removeEventListener('click', handleFlipCard);
-      memoryCards.removeChild(memoryCards.firstChild);
+    while (pairportCards.firstChild) {
+      pairportCards.firstChild.removeEventListener('click', handleFlipCard);
+      pairportCards.removeChild(pairportCards.firstChild);
     }
 
     for (var i = 0; i < rows; i++) {
       for (var j = 0; j < columns; j++) {
         // Use cloneNode(true) otherwise only one node is appended
-        memoryCards.appendChild(buildCardNode(index, cards[index],
+        pairportCards.appendChild(buildCardNode(index, cards[index],
           (100 / columns) + "%", (100 / rows) + "%"));
         index++;
       }
@@ -136,15 +136,15 @@
     // Resize cards to fit in viewport
     if (cardMaxHeight > cardHeightForMaxWidth) {
       // Update height
-      memoryCards.style.height = (cardHeightForMaxWidth * rows) + "px";
-      memoryCards.style.width = document.getElementById('memory--app-container').offsetWidth + "px";
-      memoryCards.style.top = ((cardMaxHeight * rows - (cardHeightForMaxWidth * rows)) / 2) + "px";
+      pairportCards.style.height = (cardHeightForMaxWidth * rows) + "px";
+      pairportCards.style.width = document.getElementById('pairport--app-container').offsetWidth + "px";
+      pairportCards.style.top = ((cardMaxHeight * rows - (cardHeightForMaxWidth * rows)) / 2) + "px";
     }
     else {
       // Update Width
-      memoryCards.style.width = (cardWidthForMaxHeight * columns) + "px";
-      memoryCards.style.height = document.getElementById('memory--app-container').offsetHeight + "px";
-      memoryCards.style.top = 0;
+      pairportCards.style.width = (cardWidthForMaxHeight * columns) + "px";
+      pairportCards.style.height = document.getElementById('pairport--app-container').offsetHeight + "px";
+      pairportCards.style.top = 0;
     }
 
   };
@@ -188,4 +188,4 @@
     return flipContainer;
   };
 
-})(MemoryGame);
+})(PairPort);
