@@ -216,12 +216,12 @@ body {
   -ms-transform: rotateY(0deg);
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
-  background-color: #e12d00;
   border-radius: 5%;
-  background-image: url(../images/card.svg);
+  background-image: url(../images/back-card.svg);
   background-position:50% 50%;
   background-repeat: no-repeat;
   background-size: contain;
+	box-shadow: 0px 0px 20px 1px rgba(119, 116, 116, 0.34);
 
 }
 
