@@ -242,49 +242,49 @@ body {
 }
 
 .back.card-1 {
-  background-image: url(../images/fruits/apple.jpg);
+  background-image: url(../images/PairPort/blue_helicopter.jpg);
 }
 .back.card-2 {
-  background-image: url(../images/fruits/fig.jpg);
+  background-image: url(../images/PairPort/bluePlane.jpg);
 }
 .back.card-3 {
-  background-image: url(../images/fruits/grape.jpg);
+  background-image: url(../images/PairPort/chicago.jpg);
 }
 .back.card-4 {
-  background-image: url(../images/fruits/kiwi.jpg);
+  background-image: url(../images/PairPort/greenBag.jpg);
 }
 .back.card-5 {
-  background-image: url(../images/fruits/lemon.jpg);
+  background-image: url(../images/PairPort/orange_helicopter.jpg);
 }
 .back.card-6 {
-  background-image: url(../images/fruits/lime.jpg);
+  background-image: url(../images/PairPort/orangeBag.jpg);
 }
 .back.card-7 {
-  background-image: url(../images/fruits/mango.jpg);
+  background-image: url(../images/PairPort/pinkLady.jpg);
 }
 .back.card-8 {
-  background-image: url(../images/fruits/melon.jpg);
+  background-image: url(../images/PairPort/purpleBag.jpg);
 }
 .back.card-9 {
-  background-image: url(../images/fruits/orange.jpg);
+  background-image: url(../images/PairPort/redBag.jpg);
 }
 .back.card-10 {
-  background-image: url(../images/fruits/peach.jpg);
+  background-image: url(../images/PairPort/Redwhite_plane.jpg);
 }
 .back.card-11 {
-  background-image: url(../images/fruits/pear.jpg);
+  background-image: url(../images/PairPort/security.jpg);
 }
 .back.card-12 {
-  background-image: url(../images/fruits/pinapple.jpg);
+  background-image: url(../images/PairPort/skateboardMan.jpg);
 }
 .back.card-13 {
-  background-image: url(../images/fruits/plum.jpg);
+  background-image: url(../images/PairPort/taxi.jpg);
 }
 .back.card-14 {
-  background-image: url(../images/fruits/raspberry.jpg);
+  background-image: url(../images/PairPort/yellowMan.jpg);
 }
 .back.card-15 {
-  background-image: url(../images/fruits/strawberry.jpg);
+  background-image: url(../images/PairPort/yellowPassport.jpg);
 }
 
 /** Matching Cards **/
@@ -294,11 +294,11 @@ body {
  * of the matching cards. See the example below.
  *
  * .back.card-1 {
- *   background-image: url(../images/fruits/apple_1.jpg);
+ *   background-image: url(../images/PairPort/apple_1.jpg);
  * }
  *
  * .back.matching.card-1 {
- *   background-image: url(../images/fruits/apple_2.jpg);
+ *   background-image: url(../images/PairPort/apple_2.jpg);
  * }
  *
  */
