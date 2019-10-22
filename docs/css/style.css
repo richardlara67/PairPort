@@ -90,6 +90,13 @@ body {
   float: right;
 }
 
+#pairport--app-name {
+  height: 40px;
+  display: block;
+  padding:4px 8px;
+  float: left;
+}
+
 #pairport--end-game-modal .wrapper {
   background-color: rgba(0, 0, 0, .86);
   text-align: center;
