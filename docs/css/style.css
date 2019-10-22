@@ -41,7 +41,7 @@ body {
 }
 
 #pairport--app-container {
-	background-image: url("../images/airport-background.png");
+	background-image: url("../images/pairport_background.png");
 	background-size: cover;
 	background-position: 50%;
 	width: 100%;
@@ -219,7 +219,7 @@ body {
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
   border-radius: 5%;
-  background-image: url(../images/back-card.svg);
+  background-image: url("../images/card_question.svg");
   background-position:50% 50%;
   background-repeat: no-repeat;
   background-size: contain;
