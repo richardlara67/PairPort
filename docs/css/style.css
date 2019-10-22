@@ -242,49 +242,49 @@ body {
 }
 
 .back.card-1 {
-  background-image: url(../images/PairPort/blue_helicopter.jpg);
+  background-image: url(../images/cards/pairport__card_1.png);
 }
 .back.card-2 {
-  background-image: url(../images/PairPort/bluePlane.jpg);
+  background-image: url(../images/cards/pairport__card_2.png);
 }
 .back.card-3 {
-  background-image: url(../images/PairPort/chicago.jpg);
+  background-image: url(../images/cards/pairport__card_3.png);
 }
 .back.card-4 {
-  background-image: url(../images/PairPort/greenBag.jpg);
+  background-image: url(../images/cards/pairport__card_4.png);
 }
 .back.card-5 {
-  background-image: url(../images/PairPort/orange_helicopter.jpg);
+  background-image: url(../images/cards/pairport__card_5.png);
 }
 .back.card-6 {
-  background-image: url(../images/PairPort/orangeBag.jpg);
+  background-image: url(../images/cards/pairport__card_6.png);
 }
 .back.card-7 {
-  background-image: url(../images/PairPort/pinkLady.jpg);
+  background-image: url(../images/cards/pairport__card_7.png);
 }
 .back.card-8 {
-  background-image: url(../images/PairPort/purpleBag.jpg);
+  background-image: url(../images/cards/pairport__card_8.png);
 }
 .back.card-9 {
-  background-image: url(../images/PairPort/redBag.jpg);
+  background-image: url(../images/cards/pairport__card_9.png);
 }
 .back.card-10 {
-  background-image: url(../images/PairPort/Redwhite_plane.jpg);
+  background-image: url(../images/cards/pairport__card_10.png);
 }
 .back.card-11 {
-  background-image: url(../images/PairPort/security.jpg);
+  background-image: url(../images/cards/pairport__card_11.png);
 }
 .back.card-12 {
-  background-image: url(../images/PairPort/skateboardMan.jpg);
+  background-image: url(../images/cards/pairport__card_12.png);
 }
 .back.card-13 {
-  background-image: url(../images/PairPort/taxi.jpg);
+  background-image: url(../images/cards/pairport__card_13.png);
 }
 .back.card-14 {
-  background-image: url(../images/PairPort/yellowMan.jpg);
+  background-image: url(../images/cards/pairport__card_14.png);
 }
 .back.card-15 {
-  background-image: url(../images/PairPort/yellowPassport.jpg);
+  background-image: url(../images/cards/pairport__card_15.png);
 }
 
 /** Matching Cards **/
