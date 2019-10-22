@@ -110,7 +110,7 @@ body {
 }
 
 #pairport--settings-modal {
-  background-color: rgba(0, 0, 0, .86);
+  background-color: rgba(0, 0, 0, .56);
   z-index: 4;
 }
 #pairport--settings-modal form {
