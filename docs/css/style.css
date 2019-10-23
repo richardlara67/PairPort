@@ -222,6 +222,7 @@ body {
   color:#ccc;
   height:50px;
   text-align: center;
+  border: solid 1px #fff;
 }
 
 #pairport--settings-grid option {
