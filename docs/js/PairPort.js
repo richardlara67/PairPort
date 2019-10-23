@@ -16,7 +16,7 @@
 /**
  * @namespace The main application object
  */
-var MemoryGame = {
+var PairPort = {
 
   settings: {
     rows: 2,
@@ -25,7 +25,7 @@ var MemoryGame = {
   },
 
   // Properties that indicate state
-  cards: [], // Array of MemoryGame.Card objects
+  cards: [], // Array of PairPort.Card objects
   attempts: 0, // How many pairs of cards were flipped before completing game
   mistakes: 0, // How many pairs of cards were flipped before completing game
   isGameOver: false,
@@ -169,7 +169,7 @@ var MemoryGame = {
    * @return {object} {code: number, message: string, args: array or number}
    */
   play: (function() {
-    var cardSelection = [];
+    var cardSelect = [];
     var revealedCards = 0;
     var revealedValues = [];
 
@@ -179,14 +179,14 @@ var MemoryGame = {
 
       if (!this.cards[index].isRevealed) {
         this.cards[index].reveal();
-        cardSelection.push(index);
-        if (cardSelection.length == 2) {
+        cardSelect.push(index);
+        if (cardSelect.length == 2) {
           this.attempts++;
-          if (this.cards[cardSelection[0]].value !=
-              this.cards[cardSelection[1]].value) {
+          if (this.cards[cardSelect[0]].value !=
+              this.cards[cardSelect[1]].value) {
             // No match
-            this.cards[cardSelection[0]].conceal();
-            this.cards[cardSelection[1]].conceal();
+            this.cards[cardSelect[0]].conceal();
+            this.cards[cardSelect[1]].conceal();
             /**
              * Algorithm to determine a mistake.
              * Check if the pair of at least
@@ -196,26 +196,26 @@ var MemoryGame = {
              */
             var isMistake = false;
 
-            if (revealedValues.indexOf(this.cards[cardSelection[0]].value) === -1) {
-              revealedValues.push(this.cards[cardSelection[0]].value);
+            if (revealedValues.indexOf(this.cards[cardSelect[0]].value) === -1) {
+              revealedValues.push(this.cards[cardSelect[0]].value);
             }
             else {
               isMistake = true;
             }
 
-            if (revealedValues.indexOf(this.cards[cardSelection[1]].value) === -1) {
-              revealedValues.push(this.cards[cardSelection[1]].value);
+            if (revealedValues.indexOf(this.cards[cardSelect[1]].value) === -1) {
+              revealedValues.push(this.cards[cardSelect[1]].value);
             }
 
             if (isMistake) {
               this.mistakes++;
             }
 
-            revealedValues.push(this.cards[cardSelection[0]].value);
+            revealedValues.push(this.cards[cardSelect[0]].value);
 
             status.code = 3,
             status.message = 'No Match. Conceal cards.';
-            status.args = cardSelection;
+            status.args = cardSelect;
           }
           else {
             revealedCards += 2;
@@ -233,7 +233,7 @@ var MemoryGame = {
               status.message = 'Match.';
             }
           }
-          cardSelection = [];
+          cardSelect = [];
         }
         else {
           status.code = 1,

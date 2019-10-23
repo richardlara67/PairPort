@@ -12,7 +12,7 @@
 /**
  * @namespace Card object
  */
-MemoryGame.Card = function(value, isMatchingCard) {
+PairPort.Card = function(value, isMatchingCard) {
   this.value = value;
   this.isRevealed = false;
   if (isMatchingCard) {
