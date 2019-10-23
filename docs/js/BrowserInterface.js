@@ -22,6 +22,18 @@
 
   /************ End hard coded settings ******************/
 
+  // Handle clicking on how-to icon
+  var howto = document.getElementById('pairport--howto-icon');
+  var modalHowTo = document.getElementById('pairport--howto-modal');
+  var closeHowTo = document.getElementsByClassName('closeHowTo')[0];
+  var handleOpenHowTo = function (event) {
+    event.preventDefault();
+    modalHowTo.classList.toggle('appear');
+    modal.classList.toggle('hide');
+  };
+  howto.addEventListener('click', handleOpenHowTo);
+  closeHowTo.addEventListener('click', handleOpenHowTo);
+
   // Handle clicking on settings icon
   var settings = document.getElementById('pairport--settings-icon');
   var modal = document.getElementById('pairport--settings-modal');

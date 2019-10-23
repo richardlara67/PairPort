@@ -12,11 +12,11 @@ body {
 }
 
 .modal {
-  position: fixed;
+  position:fixed;
+  z-index: 2;
   height: 90%;
   right: 0;
   top: 0;
-  z-index: 3;
   width: 100%;
   visibility: hidden;
   opacity:0;
@@ -26,9 +26,15 @@ body {
   -o-transition:opacity 0.4s linear;
   transition:opacity 0.4s linear;
 }
+
 .modal.show {
   visibility: visible;
   opacity:1;
+}
+
+.modal.hide {
+  visibility:hidden;
+  opacity:0;
 }
 
 .valign-table {
@@ -38,6 +44,70 @@ body {
 .valign-cell {
   display: table-cell;
   vertical-align: middle;
+}
+
+/* Separate modal for how-to */
+
+.modalHowTo {
+  position:fixed;
+  z-index: 3;
+  height: 90%;
+  right: 0;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity:0;
+  -webkit-transition:opacity 0.4s linear;
+  -moz-transition:opacity 0.4s linear;
+  -ms-transition:opacity 0.4s linear;
+  -o-transition:opacity 0.4s linear;
+  transition:opacity 0.4s linear;
+}
+
+.modalHowTo-content {
+  background-color: rgba(255,255,255,1);
+  margin: 10% auto;
+  width:70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+}
+
+.closeHowTo {
+  padding: 15px;
+  color:#ccc;
+  float:right;
+  font-size: 30px;
+}
+
+.closeHowTo:hover,
+.closeHowTo:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+.modalHowTo-body {
+  padding: 10px 20px;
+}
+
+.modal-header h2 {
+  margin: 0;
+}
+
+.modalHowTo-header {
+  background: rgba(0,0,0,0.86);
+  padding:15px;
+  color:#fff
+}
+
+
+.modalHowTo.appear {
+  visibility: visible;
+  opacity:1;
+}
+
+.modalHowTo.hidden{
+  visibility: visible;
+  opacity: 0;
 }
 
 #pairport--app-container {
@@ -83,6 +153,18 @@ body {
   }
 }
 
+#pairport--howto-icon {
+  height: 24px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: block;
+  padding:12px 8px;
+  float: right;
+  cursor:pointer;
+  z-index: 5;
+}
+
 #pairport--settings-icon {
   height: 24px;
   display: block;
@@ -102,6 +184,7 @@ body {
   text-align: center;
   color:#ccc;
   padding:8px 0;
+  z-index: 3;
 }
 #pairport--end-game-modal h2,
 #pairport--end-game-modal h3 {
@@ -111,7 +194,6 @@ body {
 
 #pairport--settings-modal {
   background-color: rgba(0, 0, 0, .56);
-  z-index: 4;
 }
 #pairport--settings-modal form {
   min-width:240px;
@@ -119,6 +201,12 @@ body {
   margin:0 auto;
   text-align: center;
   color:#ccc;
+}
+
+/*Used for how to*/
+
+#pairport--howto-modal {
+  background-color: rgba(0,0,0,.56);
 }
 
 .pairport--settings-label {
