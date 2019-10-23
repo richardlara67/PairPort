@@ -50,7 +50,7 @@ body {
 
 .modalHowTo {
   position:fixed;
-  z-index: 2;
+  z-index: 3;
   height: 90%;
   right: 0;
   top: 0;
@@ -71,6 +71,20 @@ body {
   box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
 }
 
+.closeHowTo {
+  padding: 15px;
+  color:#ccc;
+  float:right;
+  font-size: 30px;
+}
+
+.closeHowTo:hover,
+.closeHowTo:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor:pointer;
+}
+
 .modalHowTo-body {
   padding: 10px 20px;
 }
@@ -89,6 +103,11 @@ body {
 .modalHowTo.appear {
   visibility: visible;
   opacity:1;
+}
+
+.modalHowTo.hidden{
+  visibility: visible;
+  opacity: 0;
 }
 
 #pairport--app-container {
@@ -137,9 +156,10 @@ body {
 #pairport--howto-icon {
   height: 24px;
   display: block;
-  padding:4px 8px;
+  padding:12px 8px;
   float: right;
   cursor:pointer;
+  z-index: 5;
 }
 
 #pairport--settings-icon {
