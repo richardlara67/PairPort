@@ -155,6 +155,9 @@ body {
 
 #pairport--howto-icon {
   height: 24px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
   display: block;
   padding:12px 8px;
   float: right;
