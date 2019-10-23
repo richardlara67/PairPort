@@ -1,16 +1,14 @@
-/**
- * Author: Maximo Mena
- * GitHub: mmenavas
- * Twitter: @menamaximo
- * Project: Memory Workout
- * Description: This is a memory game written in pure JavaScript.
- * The goal is to match pairs of cards in the least
- * number of matching attempts.
- */
-
-/**
- * @TODO
- * - Implement support for multiple players.
+/*
+ * Author: DeVry University CEIS420 Team 3
+ * Team leader: Richard Lara
+ * Team members: Richard Lara, Juan Diaz, Manuel Gonzalez, 
+ * Joey Gil, Devin Nguyen, Logan Susini, Mohammad Mohammad
+ * GitHub: https://github.com/richardlara67/PairPort
+ * Project: PairPort
+ * Description: PairPort is card matching game with the same 
+ * concept as the traditional memory game. PairPort was built 
+ * with young children in mind with the goal of helping the user 
+ * improve concentration, train visual memory, and increase short term memory.
  */
 
 /**
