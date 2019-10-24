@@ -198,15 +198,23 @@ body {
   padding:8px 0;
   z-index: 3;
 }
+
 #pairport--end-game-modal h2,
 #pairport--end-game-modal h3 {
   margin:0;
   margin-bottom: 4px;
 }
 
+#pairport--end-game-modal h2
+{
+    -webkit-animation: bounce-top 4.6s infinite;
+  animation: bounce-top 4.6s infinite;
+}
+
 #pairport--settings-modal {
   background-color: rgba(0, 0, 0, .56);
 }
+
 #pairport--settings-modal form {
   min-width:240px;
   width:50%;
@@ -396,84 +404,7 @@ body {
 }
 
 /** Animation CSS **/
-/**
- * ----------------------------------------
- * Slide in Top
- * ----------------------------------------
- */
 
-@-webkit-keyframes slide-in-elliptic-top-bck {
-  0% {
-    -webkit-transform: translateY(-600px) rotateX(30deg) scale(6.5);
-            transform: translateY(-600px) rotateX(30deg) scale(6.5);
-    -webkit-transform-origin: 50% 200%;
-            transform-origin: 50% 200%;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
-    -webkit-transform-origin: 50% -500px;
-            transform-origin: 50% -500px;
-    opacity: 1;
-  }
-}
-@keyframes slide-in-elliptic-top-bck {
-  0% {
-    -webkit-transform: translateY(-600px) rotateX(30deg) scale(6.5);
-            transform: translateY(-600px) rotateX(30deg) scale(6.5);
-    -webkit-transform-origin: 50% 200%;
-            transform-origin: 50% 200%;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
-    -webkit-transform-origin: 50% -500px;
-            transform-origin: 50% -500px;
-    opacity: 1;
-  }
-}
-
-/**
- * ----------------------------------------
- * Slide in Bottom
- * ----------------------------------------
- */
-
-
-@-webkit-keyframes slide-in-elliptic-bottom-fwd {
-  0% {
-    -webkit-transform: translateY(600px) rotateX(30deg) scale(0);
-            transform: translateY(600px) rotateX(30deg) scale(0);
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
-    -webkit-transform-origin: 50% -1400px;
-            transform-origin: 50% -1400px;
-    opacity: 1;
-  }
-}
-@keyframes slide-in-elliptic-bottom-fwd {
-  0% {
-    -webkit-transform: translateY(600px) rotateX(30deg) scale(0);
-            transform: translateY(600px) rotateX(30deg) scale(0);
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0) rotateX(0) scale(1);
-            transform: translateY(0) rotateX(0) scale(1);
-    -webkit-transform-origin: 50% -1400px;
-            transform-origin: 50% -1400px;
-    opacity: 1;
-  }
-}
 
 /**
  * ----------------------------------------
@@ -482,8 +413,8 @@ body {
  */
 @-webkit-keyframes bounce-top {
   0% {
-    -webkit-transform: translateY(-45px);
-            transform: translateY(-45px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
     opacity: 1;
@@ -534,8 +465,8 @@ body {
 }
 @keyframes bounce-top {
   0% {
-    -webkit-transform: translateY(-45px);
-            transform: translateY(-45px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
     -webkit-animation-timing-function: ease-in;
             animation-timing-function: ease-in;
     opacity: 1;
@@ -584,46 +515,13 @@ body {
     opacity: 1;
   }
 }
+
+
 /**
  * ----------------------------------------
- * Color Changing background 
+ * Animation for the plane 
  * ----------------------------------------
  */
- @keyframes colorchange
-    {
-      0%   {background: red;}
-      25%  {background: yellow;}
-      50%  {background: blue;}
-      75%  {background: green;}
-      100% {background: red;}
-    }
-
-    @-webkit-keyframes colorchange 
-    {
-      0%   {background: red;}
-      25%  {background: yellow;}
-      50%  {background: blue;}
-      75%  {background: green;}
-      100% {background: red;}
-    }
-/**
- * ----------------------------------------
- * SVG Animation 
- * ----------------------------------------
- */
-html,
-body {
-  background-color: #85b9dd;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
-* {
-  position: relative;
-}
-
 .frame {
   width: 500px;
   height: auto;
@@ -638,45 +536,30 @@ svg {
   display: block;
 }
 
-/**
- * Paper Plane
- */
-/*Paper Plane: Container*/
-.plane-container {
-  width: 200px;
-  margin: 0px auto;
-  z-index: 3;
-}
- /*Paper Plane: Image*/
-.plane {
-  width: 100%;
-  height: 60px;
-  opacity: .8;
-}
-/**
- * Paper Plane
- */
-/*Paper Plane: Container*/
-.plane-container {
-  width: 200px;
-  margin: 0px auto;
-  z-index: 3;
-}
- /*Paper Plane: Image*/
-.plane {
-  width: 100%;
-  height: 60px;
-}
 
-/*Paper Plane: Animation*/
 .plane-container {
-  -webkit-animation: paper-plane-scoping 3s alternate infinite;
-  -moz-animation: paper-plane-scoping 3s alternate infinite;
-  animation: paper-plane-scoping 3s alternate infinite;
+  width: 200px;
+  margin: 0px auto;
+  z-index: 3;
+  -webkit-animation: paper-plane-scoping 2s alternate infinite;
+  -moz-animation: paper-plane-scoping 2s alternate infinite;
+  animation: paper-plane-scoping 2s alternate infinite;
 
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
   animation-timing-function: linear;
+}
+ /*Paper Plane: Image*/
+.plane {
+  width: 100%;
+  height: 60px;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation: paper-plane-soaring 4s forwards infinite;
+  -moz-animation: paper-plane-soaring 4s forwards infinite;
+  animation: paper-plane-soaring 4s forwards infinite;
+  opacity: .92
 }
 
 @-webkit-keyframes paper-plane-scoping {
@@ -692,15 +575,6 @@ svg {
   }
 }
 
-.plane {
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-
-  -webkit-animation: paper-plane-soaring 5s forwards infinite;
-  -moz-animation: paper-plane-soaring 5s forwards infinite;
-  animation: paper-plane-soaring 5s forwards infinite;
-}
 @-webkit-keyframes paper-plane-soaring {
   0% {
     -webkit-transform: rotate(0deg);
@@ -708,14 +582,14 @@ svg {
     transform: rotate(0deg);
   }
   40% {
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  50% {
     -webkit-transform: rotate(15deg);
     -moz-transform: rotate(15deg);
     transform: rotate(15deg);
-  }
-  50% {
-    -webkit-transform: rotate(18deg);
-    -moz-transform: rotate(18deg);
-    transform: rotate(18deg);
   }
   60% {
     -webkit-transform: rotate(-10deg);
@@ -723,9 +597,9 @@ svg {
     transform: rotate(-10deg);
   }
   70% {
-    -webkit-transform: rotate(-11deg);
-    -moz-transform: rotate(-11deg);
-    transform: rotate(-11deg);
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    transform: rotate(-1deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
