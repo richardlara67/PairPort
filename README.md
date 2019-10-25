@@ -2,7 +2,9 @@
 
 ![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 
-PairPort is a memory game aimed for children built with HTML5, CSS3 and Javascript.
+PairPort is an Airport based memory game aimed for children to match airport related objects and items together by flipping the cards presented, and trying to figure out which cards match. The player gets a better score the faster they are able to solve and match the cards.
+
+Pairport is built with HTML5, CSS3 and Javascript.
 
 You can try out this game [here](https://richardlara67.github.io/PairPort/)
 
