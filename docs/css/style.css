@@ -234,7 +234,7 @@ body {
   width:50%;
   margin:0 auto;
   text-align: center;
-  color:#ccc;
+  color:#fff;
 }
 
 /*replay button*/
@@ -269,7 +269,7 @@ body {
   margin-bottom:16px;
   font-size:18px;
   background:transparent;
-  color:#ccc;
+  color:#fff;
   height:50px;
   text-align: center;
   border: solid 1px #fff;
@@ -282,7 +282,7 @@ body {
 
 #pairport--settings-reset {
   border-radius:5px;
-  border:2px solid #ccc;
+  border:2px solid #fff;
   cursor: pointer;
 }
 
