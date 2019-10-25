@@ -192,12 +192,24 @@ body {
 }
 
 #pairport--end-game-modal .wrapper {
-  background-color: rgba(0, 0, 0, .86);
-  text-align: center;
-  color:#ccc;
-  padding:20px 0;
-  z-index: 3;
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    z-index: 3;
+    margin-top: -5%;
 }
+
+#pairport--end-game-modal .wrapper:before {
+        background: rgba(0, 0, 0, 0.72);
+        width: 100%;
+        height: 100%;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -5;
+}
+
 
 #pairport--end-game-modal h2,
 #pairport--end-game-modal h3 {
@@ -209,6 +221,8 @@ body {
 {
     -webkit-animation: bounce-top 4.6s infinite;
   animation: bounce-top 4.6s infinite;
+  font-size: 4em;
+  padding: 10px 0;
 }
 
 #pairport--settings-modal {
@@ -225,16 +239,17 @@ body {
 
 /*replay button*/
 
-#replay-button{
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 2px;
-  border: solid 1.5px #ccc;
-  text-decoration: overline;
-  color: #222;
-  padding: 5px 15px;
-  text-decoration: none;
-  font-size: larger;
+#replay-button {
+  background: transparent;
+  border: solid 1.5px #fff;
+  padding: .6em 3em;
+  margin-top: 25px;
+  font-size: 1.5em;
+}
+
+#replay-button a {
+    text-decoration: none;
+    color: #fff;
 }
 
 
