@@ -28,7 +28,7 @@ body {
 	top: 0;
 	z-index: 99;
 	width: auto;
-	height: 1%;
+	height: 1% !important;
 	padding-top: 10px;
 	padding-right: 10px;
 	padding-bottom: 10px;
