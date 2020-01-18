@@ -11,6 +11,10 @@ body {
   font-family: arial, helvetica, sans-serif;
 }
 
+* p {
+	color: #5c5d60;
+}
+
 .modal {
   position: fixed;
   height: 90%;
